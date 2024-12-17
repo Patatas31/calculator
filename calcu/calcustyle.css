@@ -1,0 +1,118 @@
+:root{
+    --text-color:#a2bbcf;
+    --specialbutton-color:#142f44;
+    --background-color:     #1d3849;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--background-color);
+    outline: none;
+    box-shadow: 13px 13px 20px #cbced1,
+    -13px -13px 20px #ffffff;
+}
+
+
+.display input{
+    width: 370px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.row_1{
+    padding: 10px 0 10px 0;
+    display: flex;
+    column-gap: 55px;
+}
+
+.row_1 button{
+    width: 30px;
+    margin-left: 5px;
+    background-color: #205b7a;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+.row button{
+    width: 80px;
+    height: 30px;
+    margin: 5px 5px 5px 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: var(--text-color);
+    color: black;
+    transition: background-color 0.1s;
+}
+
+.row #times,
+.row #percentage,
+.row #CE,
+.row #C,
+.row #backspace,
+.row #sec_one,
+.row #sec_two,
+.row #sec_three,
+.row #sec_four,
+.row #minus,
+.row #plus{
+    background-color: var(--specialbutton-color);
+    color: whitesmoke;
+}
+
+.row #times:active:active,
+.row #percentage:active,
+.row #CE:active,
+.row #C:active,
+.row #backspace:active,
+.row #sec_one:active,
+.row #sec_two:active,
+.row #sec_three:active,
+.row #sec_four:active,
+.row #minus:active,
+.row #plus:active{
+    background-color: blue;
+    color: black;
+}
+
+.row .convertion{
+    background-color: #205b7a;
+    color: whitesmoke;
+}
+
+.row #equal_button{
+    background-color: cornflowerblue;
+}
+
+.row button:hover{
+    transform: scale(1.05); /* Slight zoom effect */
+    filter: brightness(1.0); /* Slight darkening */
+}
+
+.row button:active,
+.row_1 button:active{
+    background-color: blue;
+    color: black;
+}
